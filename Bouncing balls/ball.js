@@ -21,13 +21,13 @@ function ball() {
     };
 
     this.border = function(other) {
-        if (this.x - 15 < 0) {
+        if (this.x - this.r/2 < 0) {
             this.xspeed = random(0, 3);
-        } else if (this.y - 15 < 0) {
+        } else if (this.y - this.r/2 < 0) {
             this.yspeed = random(0, 3);
-        } else if (this.x + 15 > width) {
+        } else if (this.x + this.r/25 > width) {
             this.xspeed = random(-3, 0);
-        } else if (this.y + 15 > height) {
+        } else if (this.y + this.r/2 > height) {
             this.yspeed = random(-3, 0);
         }
     };
