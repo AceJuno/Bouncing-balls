@@ -6,6 +6,12 @@ function ball() {
     this.yspeed = random(-3, 3);
 
     this.make = function() {
+      noStroke();
+      fill(0,0,0,150)
+        ellipse(this.x-1, this.y-1, this.r-5, this.r-5);
+        fill(113,161,208,100)
+        ellipse(this.x, this.y, this.r, this.r);
+        fill(113,208,208,100)
         ellipse(this.x, this.y, this.r, this.r);
     };
 
