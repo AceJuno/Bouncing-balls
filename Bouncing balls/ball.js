@@ -1,4 +1,6 @@
 function ball() {
+    var   x = constrain(mouseX,this.r/2,width -this.r/2);
+    var   y = constrain(mouseY,this.r/2,height-this.r/2);
     this.x = mouseX;
     this.y = mouseY;
     this.r = 30;
